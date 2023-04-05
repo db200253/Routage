@@ -29,4 +29,9 @@ public class Artere {
 		
 		this.c2 = c2;
 	}
+	
+	public String toString() {
+		
+		return c1.getNomCommutateur() + "<->" + c2.getNomCommutateur();
+	}
 }

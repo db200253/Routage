@@ -39,4 +39,27 @@ public class Interface {
 		
 		this.listA = listA;
 	}
+	
+	public String toString() {
+		
+		String result = "";
+		
+		result += "Commutateurs : \n";
+		
+		for(int i = 0; i < listC.size(); ++i) {
+			
+			result += listC.get(i).toString();
+			result += "\n";
+		}
+		
+		result += "Arteres : \n";
+		
+		for(int i = 0; i < listA.size(); ++i) {
+			
+			result += listA.get(i).toString();
+			result += "\n";
+		}
+		
+		return result;
+	}
 }

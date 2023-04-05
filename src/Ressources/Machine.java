@@ -3,20 +3,10 @@ package Ressources;
 public class Machine {
 	
 	private String nomMachine;
-	private Commutateur comm;
 	
-	public Machine(String nomMachine, Commutateur comm) {
+	public Machine(String nomMachine) {
 		
 		this.nomMachine = nomMachine;
-		this.comm = comm;
-	}
-
-	public Commutateur getComm() {
-		return comm;
-	}
-
-	public void setComm(Commutateur comm) {
-		this.comm = comm;
 	}
 
 	public String getNomMachine() {
@@ -27,5 +17,10 @@ public class Machine {
 	public void setNomMachine(String nomMachine) {
 		
 		this.nomMachine = nomMachine;
+	}
+	
+	public String toString() {
+		
+		return nomMachine;
 	}
 }
