@@ -3,6 +3,10 @@ package Main;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import javax.swing.SwingUtilities;
+
+import Graphique.Fenetre;
 import Ressources.Artere;
 import Ressources.Commutateur;
 import Ressources.Interface;
@@ -87,7 +91,8 @@ public class Main {
 		}
 		
 		Interface reseau = new Interface(commutateurs, arteres);
-		System.out.println(reseau);
+		
+		SwingUtilities.invokeLater(() -> new Fenetre(reseau));
 		
 		sc.close();
 	}
